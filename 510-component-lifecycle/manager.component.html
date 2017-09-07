@@ -1,0 +1,26 @@
+<h4>Interact with the following controls with the console open</h4>
+<div [formGroup]="testGroup" class="row">
+  <div class="col s3">
+    <input type="checkbox" id="check" formControlName="showing">
+    <label for="check">Show Workers</label>
+  </div>
+  <div class="col s3">
+    <input id="testVal" formControlName="testVal">
+    <label for="testVal">testVal</label>
+  </div>
+  <div class="col s3">
+    <input formControlName="testVal2">
+    <label>testVal2</label>
+  </div>
+  <div class="col s3">
+    <input formControlName="testVal3">
+    <label>testVal3</label>
+  </div>
+</div>
+<div class="row">
+  <worker-cmp
+    [label]="testGroup.get('testVal').value"
+    [label2]="testGroup.get('testVal2').value"
+    *ngIf="testGroup.get('showing').value"
+  ></worker-cmp>
+</div>

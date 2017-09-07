@@ -1,0 +1,14 @@
+{
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "html.format.endWithNewline": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.extraLiners": "vs-code-is-silly",
+  "editor.detectIndentation": false,
+  "rewrap.wrappingColumn": 70,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "bookmarkability",
+    "scalability"
+  ]
+}

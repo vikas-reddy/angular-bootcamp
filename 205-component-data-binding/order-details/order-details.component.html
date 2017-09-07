@@ -1,0 +1,13 @@
+<section class="card">
+  <div class="component-marker">
+    OrderDetails
+  </div>
+  <div class="card-content">
+    <div *ngIf="!order">Please select order to view details</div>
+    <div *ngIf="order" class="card-content">
+      <div class="card-title">Details</div>
+      <order-header [customerName]="order.customer"></order-header>
+      <order-items [items]="order.items"></order-items>
+    </div>
+  </div>
+</section>
